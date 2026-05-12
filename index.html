@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatih Bilgi | Industrial Engineer & Developer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #f0f6fc;
+            --accent-color: #4285F4;
+            --gradient: linear-gradient(45deg, #02030c, #030c1b, #0c131b, #131b1b, #1b1b1b);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header & Hero Section */
+        header {
+            background: var(--gradient);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .social-card {
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.3s;
+        }
+
+        .social-card:hover { transform: translateY(-3px); }
+        .linkedin { background: #0077B5; }
+        .github { background: #181717; }
+        .youtube { background: #ff0000; }
+        .email { background: #D14836; }
+
+        /* Sections */
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+        }
+
+        /* Grid Layout for Experience */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+        }
+
+        .card h4 {
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card ul li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .card ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        /* Badges */
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .badge-container img {
+            height: 35px;
+        }
+
+        /* Stats */
+        .stats-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .stats-container img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gradient);
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="hero-title">Fatih Bilgi</h1>
+    <p class="hero-subtitle">Industrial Engineer | Full-Stack Developer | AI Enthusiast</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/fatih-bilgi-176b86297/" class="social-card linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/fatihbilgi03" class="social-card github"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://youtube.com/@fatihbilgi16" class="social-card youtube"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="mailto:fatihbilgi03@hotmail.com" class="social-card email"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+</header>
+
+<div class="container">
+    
+    <!-- About Section -->
+    <section>
+        <h2><i class="fas fa-user-tie"></i> Hakkımda</h2>
+        <div class="about-text">
+            İstanbul Teknik Üniversitesi (İTÜ) İşletme Mühendisliği 3. sınıf öğrencisiyim. Mühendislik prensiplerini yazılım çözümleriyle birleştirmeye odaklanıyorum. Backend sistemleri (JWT, MongoDB) ve Full-Stack geliştirme konusunda deneyim sahibiyim. Temel odak noktam; endüstriyel sektörlerde dijital dönüşümü tetikleyecek Yapay Zeka, Makine Öğrenmesi ve Süreç Otomasyonu projeleri geliştirmektir.
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section>
+        <h2><i class="fas fa-rocket"></i> Deneyim & Projeler</h2>
+        <div class="grid">
+            <div class="card">
+                <h4><i class="fas fa-code"></i> Yazılım & AI Stajları</h4>
+                <ul>
+                    <li><strong>Ziraat Teknoloji</strong> — Backend Dev (JS, MongoDB, JWT)</li>
+                    <li><strong>Latro Chemicals</strong> — Excel Otomasyonu & Veri (Python)</li>
+                    <li><strong>BlueSense</strong> — AI & Görüntü İşleme Stajyeri</li>
+                </ul>
+                <h4 style="margin-top:20px"><i class="fas fa-university"></i> Akademik</h4>
+                <ul>
+                    <li><strong>ITU AI Babies</strong> — Araştırma Ekibi (Sinir Ağları)</li>
+                    <li><strong>Endüstri Mühendisliği</strong> — Operasyon Yönetimi</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h4><i class="fas fa-industry"></i> Endüstriyel Deneyim</h4>
+                <ul>
+                    <li><strong>Penye Textile</strong> — İş Geliştirme & SQL Analizi</li>
+                    <li><strong>OnlyTalent</strong> — Satış & Pazarlama Operasyonları</li>
+                </ul>
+                <h4 style="margin-top:20px"><i class="fas fa-bullseye"></i> Yetkinlik Odakları</h4>
+                <ul>
+                    <li><strong>Optimizasyon</strong> — Hiperparametre iyileştirme</li>
+                    <li><strong>Otomasyon</strong> — Python ile iş yükü azaltma</li>
+                    <li><strong>Veri Analizi</strong> — Karar destek sistemleri</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section>
+        <h2 style="text-align: center; border: none; padding: 0;">Teknoloji Yığını</h2>
+        <div class="badge-container">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JS">
+            <img src="https://img.shields.io/badge/Machine_Learning-4285F4?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="ML">
+            <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+            <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
+            <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
+        </div>
+    </section>
+
+    <!-- GitHub Stats -->
+    <section>
+        <h2><i class="fab fa-github"></i> GitHub İstatistikleri</h2>
+        <div class="stats-container">
+            <img src="https://github-readme-stats.vercel.app/api?username=fatihbilgi03&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=161b22" alt="Stats">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=fatihbilgi03&layout=compact&theme=tokyonight&hide_border=true&bg_color=161b22&langs_count=8" alt="Langs">
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Fatih Bilgi. ITU Industrial Engineering Student.</p>
+    <p>Data-Driven Industrial Solutions & Full-Stack Development</p>
+</footer>
+
+</body>
+</html>
